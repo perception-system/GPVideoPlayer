@@ -197,8 +197,8 @@ private extension GPVideoPlayer {
         self.layoutIfNeeded()
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.videoView.bounds
-        playerLayer.videoGravity = .resizeAspect
-        playerLayer.contentsGravity = .resizeAspect
+        playerLayer.videoGravity = .resizeAspectFill
+        playerLayer.contentsGravity = .resizeAspectFill
         self.playerLayer = playerLayer
         return playerLayer
     }
